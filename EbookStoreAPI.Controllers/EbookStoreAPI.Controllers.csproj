@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EbookStoreAPI.DAL\EbookStoreAPI.DAL.csproj" />
+    <ProjectReference Include="..\EbookStoreAPI.DBConnection\EbookStoreAPI.DBConnection.csproj" />
+    <ProjectReference Include="..\EbookStoreAPI.DTO\EbookStoreAPI.DTO.csproj" />
+    <ProjectReference Include="..\EbookStoreAPI.Services\EbookStoreAPI.Services.csproj" />
+  </ItemGroup>
+
+</Project>
